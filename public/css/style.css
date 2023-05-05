@@ -1,0 +1,336 @@
+*{
+    font-family: 'Raleway';
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    user-select: none;
+}
+h1{
+    color: white;
+}
+.landing-page{
+    position: relative;
+    width: 100%;
+}
+#form-id{
+    width: 100%;
+    padding: 15px;
+}
+#flex-form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+form{
+    max-width: 800px;
+    flex-basis: 800px;
+}
+#contactForm input, #contactForm textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(33, 37, 41);
+    font-family: 'Raleway';
+}
+input[type = 'submit']{
+    border-radius: 5px; 
+    background-color: rgb(33, 37, 41);
+    color: white;
+}
+input[type = "submit"]:hover{
+    background-color: rgba(33,37,41,0.9);
+}
+.text-color-white li a{
+    color: white !important;
+}
+.nav-bar{
+    top:0;
+    background-color: none;
+    width: 100%;
+    padding: 15px 10px;
+    position: absolute;
+    overflow-x: none;
+    right: 15px;
+}
+.nav-bar-2{
+    top:0;
+    background-color: none;
+    width: 100%;
+    padding: 15px 10px;
+    overflow: hidden;
+    right: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-bar-2 a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: 0.2s;
+    color: black;
+}
+.nav-bar-2 a:hover{
+    text-decoration: underline;
+}
+.purplePrime{
+    border-top: 1px solid rgb(33, 37, 41);
+    border-bottom: 1px solid rgb(33, 37, 41);
+    border-left: 1px solid rgb(33, 37, 41);
+}
+.purplePrime:last-child{
+    border-right: 1px solid rgb(33, 37, 41);
+    border-left: none;
+}
+
+.purplePrime:hover{
+    background-color: rgb(33, 37, 41);
+    color: white;
+}
+.nav-list{
+    float: right;
+}
+.nav-bar span{
+    float: left;
+}
+.nav-bar a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: 0.2s;
+}
+.nav-bar a:hover{
+    text-decoration: underline;
+}
+.mod, .mod-2{
+    display: none;
+    float: right;
+}
+.mod button{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: 0.2s;
+}
+.mod-2 button{
+    background-color: white;
+    color: rgb(33, 37, 41);
+    border: 1px solid rgb(33, 37, 41);
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: 0.2s;
+}
+.mod button:hover{
+    color: rgb(33, 37, 41);
+    background-color: rgba(255,255,255,0.8);
+}
+.mod-2 button:hover{
+    color: white;
+    background-color: rgb(33, 37, 41);
+}
+.purple{
+    color: rgb(33, 37, 41);
+    background-color: rgba(255,255,255,0.8);
+}
+.purple:hover{
+    background-color: transparent;
+    color:white;
+    outline: 1px solid white;
+}
+.overlay-nav{
+    display: none;
+    z-index: 1;
+    width: 100%;
+    background-color:rgba(33, 37, 41,1);
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 0;
+    transition: 0.3s;
+    height: 100%;
+    overflow-x: hidden;
+    text-align: center;
+}
+.overlay-nav a{
+    text-decoration: none;
+    background-color: rgb(33, 37, 41);
+    display: block;
+    margin-bottom: 0;
+    padding: 10px 15px;
+    color: white;
+    transition: 0.2s;
+}
+#closeBtn{
+    position: absolute;
+    background-color:rgb(33, 37, 41);
+    color: white;
+    padding: 15px;
+    border: none;
+    top: 3px; right: 5px;
+}
+#closeBtn:hover{
+    background-color: white;
+    color:rgb(33, 37, 41);
+}
+.o-n{
+    margin-top: 60px;
+}
+.accordition-layer{
+    display: none;
+    background-color: rgb(6,6,66);
+}
+.accordition-layer a{
+    text-decoration: none;
+    background-color: rgb(6, 6, 66);
+    display: block;
+    margin-bottom: 0;
+    padding: 10px 15px;
+    color: white;
+}
+.acc-tools-prime{
+    float: right;
+}
+.acc-tools-prime a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.hoverable{
+    position: absolute;
+    background-color: white;
+    right: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    display: none;
+}
+.hoverable a{
+    float: none;
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 15px;
+    color: black;
+    margin-right: 2px;
+}
+.hoverable a:hover{
+    background-color: black;
+    color: white;
+}
+#acc-btn{
+    border:none;
+    background-color: black;
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;  
+    font-family: 'Raleway';
+    font-size: 17px;
+}
+#acc-btn:hover{
+    background-color: purple;
+    color: white;
+}
+.acc-tools-prime:hover .hoverable{
+    display: block;
+}
+.overlay-nav a:hover{
+    background-color: white;
+    color: rgb(33,37,41);
+}
+.menu-tabs{
+    background-color: rgb(247, 244, 244);
+    text-align: center;
+    border: 1px solid rgb(33, 37, 41);
+}
+.menu-tabs button{
+    background-color: white;
+    display: inline-block;
+    border: none;
+    padding: 10px 15px;
+    color: rgb(33, 37, 41);
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+.menu-tabs button:hover, .active{
+    border-bottom: 2px solid rgb(33, 37, 41);
+}
+.food{
+    display: none;
+}
+.cont-content{
+    position: absolute; top: 50%; width: 100%; text-align: center;
+}
+.dish{
+    display: block;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgb(33, 37, 41);
+    padding: 10px 15px;
+}
+p{
+    display: block;
+    width: 100%;
+}
+p:last-child{
+    margin-bottom: 4px;
+}
+.active{
+    font-weight: bold;
+}
+.dish:hover{
+    background-color: rgb(228, 228, 228);
+}
+.btn-block{
+    border: none;
+    background-color: rgb(33, 37, 41);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+.btn-block:hover{
+    background-color: white;
+    color: rgb(33, 37, 41);
+    border: 1px solid rgb(33, 37, 41);
+}
+.btn-es{
+    position: relative;
+    width: 100%;
+    text-align: right;
+}
+@media only screen and (max-width: 1000px){
+    form input{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .nav-list{
+        display: none;
+    }
+    .mod{
+        display: block;
+    }
+    .mod-2{
+        display: block;
+    }
+    .overlay-nav{
+        display: block;
+    }
+    .cont-content{
+        top: 20%;
+    }
+    .acc-tools-prime{
+        display: none;
+    }
+}
